@@ -1,0 +1,92 @@
+@import '../../assets/sass/media.scss';
+
+.header {
+
+    &_box {
+        display: flex;
+    }
+
+    &_labal {
+        display: flex;
+    }
+
+    &_list {
+        display: flex;
+        flex-direction: column;
+        padding-top: 25px;
+        gap: 10px;
+        width: 200px;
+        height: 300px;
+        border-right: 1px solid #929292;
+
+    }
+
+    &_link {
+        color: black;
+        transition: 0.4s;
+
+        &:hover {
+            font-size: 17px;
+            font-weight: 600;
+
+        }
+
+    }
+
+    &_right {
+        display: flex;
+
+    }
+}
+
+.link_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+
+    svg {
+        display: flex;
+        align-items: center;
+        padding-top: 4px;
+        font-size: 25px;
+
+    }
+}
+
+// @include media(1058) {
+//     .header_right {
+//        width: 850px;
+//     }
+// }
+// @include media(990) {
+//     .header_list {
+//         gap: 10px;
+//         width: 200px;
+//         height: 350px;
+//         border-right: 1px solid #929292;
+
+//     }
+// }
+// @include media(972){
+//        .header_right{
+//         width: 800px;
+//        }
+// }
+// @include media(1062){
+//     .swiper {
+//      min-width: 500px;
+//      margin-right: 10px;
+//      margin-left: -20px;
+//     }
+//     .container{
+//         padding: 0px 10px 0px 10px;
+//     }
+//     .tovar1{
+//      display: flex;
+//      flex-direction: column;
+//     }
+//  }
+// // @include media(){
+
+// // }

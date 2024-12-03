@@ -1,0 +1,31 @@
+/* Rating.scss */
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rating_star {
+    display: flex;
+    gap: 5px; /* Yulduzlar orasidagi masofa */
+  }
+  
+  .star {
+    cursor: pointer;
+    color: #000000; /* Bosilmagan yulduzlar uchun kulrang */
+    transition: color 0.58s ease;
+  &_icon{
+    font-size:24px;
+  }
+    &.active {
+      color: #ffd700;
+      transition: color 0.58s ease;
+      /* Bosilgan yulduzlar uchun sariq rang */
+    }
+  
+    /* Hover holati */
+    &:hover {
+      color: #ffd700; /* Hover qilingan yulduz uchun sariq rang */
+    
+    }
+  }

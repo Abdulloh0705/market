@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yuji+Mai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yuji+Mai&display=swap');
+@import '../../assets/sass/media.scss';
+body {
+  position: relative;
+}
+
+body {
+  background: #eee;
+
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 900px;
+  height: 300px;
+  margin: 10px 0px 0px 40px;
+}
+
+.swiper-slide {
+  background: black;
+}
+
+.left_info {
+  padding: 37px 58px;
+}
+
+.left_logo {
+  display: flex;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  color: #eee;
+  font-family: "Poppins";
+}
+
+.esse {
+  width: 200px;
+  padding: 20px 0px 20px 0px;
+}
+
+.left_text {
+  color: #eee;
+  font-size: 35px;
+  font-weight: 650;
+  //styleName: Heading/48PX SemiBold;
+  font-family: "Inter";
+
+
+}
+
+.now {
+  padding: 15px 0px 0px 10px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.left_icon {
+  color: #eee;
+  font-family: "Poppins";
+
+  svg {
+    padding-top: 3px;
+    font-size: 20px;
+  }
+}
+
+.left_link {
+  color: #eee;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+.swiper-button-prev:after, .swiper-button-next:after{
+  color: #eee;
+}
+.rec{
+  flex-wrap: wrap;
+  width: 800px;
+  text-align: center;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+margin-top: 13%;
+font-family: "Yuji Mai";
+}
+.swiper_all {
+  display: flex;
+}
+
+.right_img {
+  padding-top: 5px;
+  padding-left: 35px;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+  color: #fff;
+}
+.swiper-horizontal .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+
+  border: solid 8px #fff;
+  width: 15px;
+  height: 15px;
+}
+// @include media(940)
