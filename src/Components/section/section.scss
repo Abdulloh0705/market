@@ -1,121 +1,180 @@
-@import '../../assets/sass/media.scss';
+@import '../media.scss';
+
 .section {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 
 .product_filtr {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .product_icons {
-    display: flex;
-    align-items: end;
-
+  display: flex;
+  align-items: flex-end;
 }
 
 .product_icon {
-    gap: 12px;
-    display: flex;
+  gap: 12px;
+  display: flex;
 }
 
 .product_box {
-    display: flex;
-    position: relative;
+  display: flex;
+  position: relative;
 
-    &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        width: 10px;
-        background: red;
-        border-radius: 10px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    background: red;
+    border-radius: 10px;
+  }
 
-    }
-
-    border-radius: 4px 4px 4px 4px;
-
+  border-radius: 4px;
 }
 
 .product_title {
-    font-size: "Poppins";
-    margin-left: 2px;
-    margin-left: 18px;
+  font-size: "Poppins";
+  margin-left: 18px;
 
-    &:hover {
-        font-size: 20px;
-        color: red;
-        padding-bottom: 2%;
-    }
+  &:hover {
+    font-size: 20px;
+    color: red;
+    padding-bottom: 2%;
+  }
 }
 
 .icon_left,
 .icon_right {
-    background-color: #cecece;
-    border-radius: 90%;
-    padding: 5px 5px 2px 5px;
+  background-color: #cecece;
+  border-radius: 50%;
+  padding: 5px 5px 2px 5px;
 }
 
 .product_flash {
-    padding-top: 15px;
+  padding-top: 15px;
 }
 
 .product_flash_title {
-    font-family: "Inter";
-
+  font-family: "Inter";
 }
 
 .tavar1 {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .pult_card {
-    display: flex;
-    flex-direction: column;
-&:hover{
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
     box-shadow: 0 0 30px #4e4e4e;
-    border-radius: 10px 10px 10px 10px;
-}
+    border-radius: 10px;
+  }
 }
 
 .tovar {
-    padding-top: 30px;
+  padding-top: 30px;
 
-    &_img {
-        width: 100%;
-        height: 190px;
-        padding: 30px 40px 30px 40px;
-        background-color: #cecece;
+  &_img {
+    width: 100%;
+    height: 190px;
+    padding: 30px 40px;
+    background-color: #cecece;
 
-
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: contain;
-        }
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
     }
-p{
+  }
+
+  p {
     color: red;
     padding-left: 5px;
-}
-    h2 {
-        color: black;
-        padding-left: 8px;
-        width: 201px;
-        height: 30px;
-       font-size: 16px;
-       font-weight: 500;
-    }
+  }
 
-    &_text {
-        flex: 1;
-    }
+  h2 {
+    color: black;
+    padding-left: 8px;
+    width: 201px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &_text {
+    flex: 1;
+  }
 }
-.rayting{
-    display: flex;
-    padding: 10px;
+
+.rayting {
+  display: flex;
+  padding: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .tavar1 {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .pult_card {
+    width: calc(50% - 20px);
+
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-top: 50px;
+  }
+.product_neme{
+   
+}
+  .product_filtr {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product_title {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .tavar1 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .pult_card {
+    width: 100%;
     
+  }
+}
+
+@media (max-width: 480px) {
+  .product_icons {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .icon_left,
+  .icon_right {
+    padding: 3px 3px 1px 3px;
+  }
+
+  .product_flash_title {
+    font-size: 18px;
+  }
+
+  .h2 {
+    font-size: 14px;
+  }
 }

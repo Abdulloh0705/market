@@ -12,7 +12,6 @@ const Section = () => {
       <div className="product_filtr">
         <div className="product_neme">
           <div className="product_box">
-
             <p className="product_title">Today’s</p>
           </div>
           <div className="product_flash">
@@ -33,22 +32,22 @@ const Section = () => {
       <div className="tovar">
         <div className="tavar1">
           {
-           tovarArr.map(tovar => (
-            <div className="pult_card" key={tovar.id}>
-              <div className="tovar_img">
-                <Link to={`/product/${tovar.id}`}>
-                  <img src={tovar.img} alt={tovar.title} />
-                </Link>
+            tovarArr.map(tovar => (
+              <div className="pult_card" key={tovar.id}>
+                <div className="tovar_img">
+                  <Link to={`/product/${tovar.id}`}>
+                    <img src={tovar.img} alt={tovar.title} />
+                  </Link>
+                </div>
+
+                <div className="tovar_text">
+                  <h2>{tovar.title}</h2>
+                  <p>{tovar.price}</p>
+                  <Rating />
+                </div>
               </div>
-              
-              <div className="tovar_text">
-                <h2>{tovar.title}</h2>
-                <p>{tovar.price}</p>
-                <Rating />
-              </div>
-            </div>
-          ))
-          
+            ))
+
           }
         </div>
       </div>

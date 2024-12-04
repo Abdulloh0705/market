@@ -1,74 +1,158 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yuji+Mai&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yuji+Mai&display=swap');
-@import '../../assets/sass/media.scss';
 body {
   position: relative;
-}
-
-body {
   background: #eee;
-
   font-size: 14px;
   color: #000;
   margin: 0;
   padding: 0;
+
+  @include media(1024) {
+    font-size: 13px;
+  }
+
+  @include media(768) {
+    font-size: 12px;
+  }
+
+  @include media(425) {
+    font-size: 11px;
+  }
 }
 
 .swiper {
   width: 900px;
   height: 300px;
-  margin: 10px 0px 0px 40px;
+  margin: 10px 0 0 40px;
+
+  @include media(1440) {
+    width: 800px;
+  }
+
+  @include media(1024) {
+    width: 730px;
+    margin-left: 20px;
+  }
+
+  @include media(768) {
+    width: 530px;
+    height: 250px;
+  }
+  @include media(676) {
+    width: 500px;
+    height: 250px;
+  }
+
+  @include media(425) {
+    width: 350px;
+    height: 200px;
+    
+  }
 }
 
 .swiper-slide {
   background: black;
+
+  @include media(768) {
+ 
+  }
 }
 
 .left_info {
   padding: 37px 58px;
+
+  @include media(1024) {
+    padding: 30px 40px;
+  }
+
+  @include media(768) {
+    padding: 20px 20px;
+  }
+
+  @include media(425) {
+    padding: 10px 15px;
+  }
 }
 
 .left_logo {
   display: flex;
   gap: 20px;
-  display: flex;
   align-items: center;
+
+  @include media(768) {
+    gap: 10px;
+  }
 }
 
 .title {
   color: #eee;
   font-family: "Poppins";
+  font-size: 24px;
+
+  @include media(768) {
+    font-size: 20px;
+  }
+
+  @include media(425) {
+    font-size: 18px;
+  }
 }
 
 .esse {
   width: 200px;
-  padding: 20px 0px 20px 0px;
+  padding: 20px 0;
+
+  @include media(768) {
+    width: 150px;
+    padding: 15px 0;
+  }
+
+  @include media(425) {
+    width: 100px;
+    padding: 10px 0;
+  }
 }
 
 .left_text {
   color: #eee;
   font-size: 35px;
   font-weight: 650;
-  //styleName: Heading/48PX SemiBold;
   font-family: "Inter";
 
+  @include media(768) {
+    font-size: 30px;
+  }
 
+  @include media(425) {
+    font-size: 25px;
+  }
 }
 
 .now {
-  padding: 15px 0px 0px 10px;
+  padding: 15px 0 0 10px;
   display: flex;
   gap: 15px;
   align-items: center;
+
+  @include media(425) {
+    gap: 10px;
+    padding: 10px 0 0 5px;
+  }
 }
 
 .left_icon {
   color: #eee;
-  font-family: "Poppins";
 
   svg {
     padding-top: 3px;
     font-size: 20px;
+
+    @include media(768) {
+      font-size: 18px;
+    }
+
+    @include media(425) {
+      font-size: 16px;
+    }
   }
 }
 
@@ -76,36 +160,78 @@ body {
   color: #eee;
   font-family: "Poppins";
   font-weight: 500;
+
+  @include media(768) {
+    font-size: 14px;
+  }
+
+  @include media(425) {
+    font-size: 12px;
+  }
 }
-.swiper-button-prev:after, .swiper-button-next:after{
-  color: #eee;
-}
-.rec{
+
+.rec {
   flex-wrap: wrap;
   width: 800px;
   text-align: center;
   color: #eee;
   display: flex;
   justify-content: center;
-margin-top: 13%;
-font-family: "Yuji Mai";
+  margin-top: 13%;
+  font-family: "Yuji Mai";
+
+  @include media(958) {
+    width: 600px;
+    margin-top: 9%;
+    padding-left: 66px;
+    font-size: 42px;
+  }
+  @include media(768) {
+    width: 350px;
+   padding-left: 200px;
+    font-size: 17px;
+  }
+
+  @include media(425) {
+    width: 350px;
+    padding-top:6%;
+   padding-left: 25px;
+    font-size: 17px;
+  }
 }
+
 .swiper_all {
   display: flex;
+
+
 }
 
 .right_img {
   padding-top: 5px;
   padding-left: 35px;
+
+  @include media(768) {
+    padding-left: 15px;
+  }
+
+  @include media(425) {
+    padding-left: 10px;
+  }
 }
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
-  color: #fff;
-}
+
 .swiper-horizontal .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-
   border: solid 8px #fff;
   width: 15px;
   height: 15px;
+
+  @include media(768) {
+    width: 12px;
+    height: 12px;
+  }
+
+  @include media(425) {
+    width: 10px;
+    height: 10px;
+  }
 }
-// @include media(940)

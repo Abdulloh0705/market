@@ -16,14 +16,14 @@ const Product = () => {
                     <div className="card_esse">
                         <h2>{tovar.title}</h2>
                         <div className="product_star">
-                            <Rating/>
+                            <Rating />
                             <div className="product_text">
-                            <p>(150 Reviews)</p>
+                                <p>(150 Reviews)</p>
                             </div>
                         </div>
                         <p className="id_price">{tovar.price}</p>
                         <p>{tovar.text}</p>
-                        
+
                     </div>
 
                 </div>
