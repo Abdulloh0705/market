@@ -1,113 +1,128 @@
 @import '../media.scss';
 
 .header {
-  &_box {
-    display: flex;
-    @include media(1024) {
-     
-    }
-    @include media(768) {
-      
-      
-    }
-    @include media(425) {
-      flex-direction: column;
-    
-    }
-  }
+    &_box {
+        display: flex;
 
-  &_list {
-    display: flex;
-    flex-direction: column;
-    padding-top: 25px;
-    gap: 10px;
-    width: 200px;
-    height: 300px;
-    border-right: 1px solid #929292;
+        @include media(1024) {}
 
-    @include media(1440) {
-      width: 180px;
-      height: auto;
-    }
-    @include media(1024) {
-      width: 150px;
-      padding-top: 20px;
-    }
-    @include media(768) {
-      width: 130px;
-      gap: 8px;
-    }
-    @include media(425) {
-      width: 100px;
-      gap: 5px;
-    }
-    @include media(320) {
-      width: 80px;
-      gap: 3px;
-    }
-  }
+        @include media(768) {}
 
-  &_link {
-    color: black;
-    transition: 0.4s;
+        @include media(425) {
+            flex-direction: column;
 
-    &:hover {
-      font-size: 17px;
-      font-weight: 600;
+        }
     }
 
-    @include media(1024) {
-      font-size: 15px;
-    }
-    @include media(768) {
-      font-size: 14px;
-    }
-    @include media(425) {
-      font-size: 13px;
-    }
-    @include media(320) {
-      font-size: 12px;
-    }
-  }
+    &_list {
+        display: flex;
+        flex-direction: column;
+        padding-top: 25px;
+        gap: 10px;
+        width: 200px;
+        height: 300px;
+        border-right: 1px solid #929292;
 
-  &_right {
-    display: flex;
-    @include media(1024) {
-      justify-content: center;
+        @include media(1440) {
+            width: 180px;
+            height: auto;
+        }
+
+        @include media(1024) {
+            width: 150px;
+            padding-top: 20px;
+        }
+
+        @include media(768) {
+            width: 130px;
+            gap: 8px;
+        }
+
+        @include media(425) {
+            flex-direction: row;
+            width: 340px;
+            border: 0;
+            flex-wrap: wrap;
+            border-bottom: 1px solid rgb(80, 80, 80);
+            gap: 9px;
+        }
+
+        @include media(320) {
+            width: 80px;
+            gap: 3px;
+        }
     }
-    @include media(768) {
-      flex-direction: column;
-      align-items: center;
+
+    &_link {
+        color: black;
+        transition: 0.4s;
+
+        &:hover {
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        @include media(1024) {
+            font-size: 15px;
+        }
+
+        @include media(768) {
+            font-size: 14px;
+        }
+
+        @include media(425) {
+            font-size: 13px;
+        }
+
+        @include media(320) {
+            font-size: 12px;
+        }
     }
-  }
+
+    &_right {
+        display: flex;
+
+        @include media(1024) {
+            justify-content: center;
+        }
+
+        @include media(768) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }
 
 .link_box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 15px;
-
-  svg {
     display: flex;
     align-items: center;
-    padding-top: 4px;
-    font-size: 25px;
+    justify-content: space-between;
+    padding-right: 15px;
 
-    @include media(1440) {
-      font-size: 22px;
+    svg {
+        display: flex;
+        align-items: center;
+        padding-top: 4px;
+        font-size: 25px;
+
+        @include media(1440) {
+            font-size: 22px;
+        }
+
+        @include media(1024) {
+            font-size: 20px;
+        }
+
+        @include media(768) {
+            font-size: 18px;
+        }
+
+        @include media(425) {
+            font-size: 16px;
+        }
+
+        @include media(320) {
+            font-size: 14px;
+        }
     }
-    @include media(1024) {
-      font-size: 20px;
-    }
-    @include media(768) {
-      font-size: 18px;
-    }
-    @include media(425) {
-      font-size: 16px;
-    }
-    @include media(320) {
-      font-size: 14px;
-    }
-  }
 }

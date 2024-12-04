@@ -22,7 +22,7 @@ body {
 .swiper {
   width: 900px;
   height: 300px;
-  margin: 10px 0 0 40px;
+  margin: 10px 0 0 20px;
 
   @include media(1440) {
     width: 800px;
@@ -46,6 +46,14 @@ body {
     width: 350px;
     height: 200px;
     
+  }
+  @include media(390) {
+    width: 340px;
+    
+    padding-top:6%;
+  }
+  @include media(367) {
+margin: 0 !important;
   }
 }
 
@@ -198,6 +206,7 @@ body {
    padding-left: 25px;
     font-size: 17px;
   }
+ 
 }
 
 .swiper_all {
@@ -234,4 +243,5 @@ body {
     width: 10px;
     height: 10px;
   }
+
 }
